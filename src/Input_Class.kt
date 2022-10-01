@@ -1,3 +1,6 @@
+import java.lang.reflect.GenericArrayType
+import kotlin.Array as Array1
+
 class Input_Class
 {
     fun Char_Input(): Char
@@ -78,5 +81,19 @@ class Input_Class
 
 
         return Input_Float
+    }
+
+
+
+
+    fun Array_Input(Array_Size: Int, Value_of_Type: GenericArrayType): Array1<GenericArrayType>
+    {
+        var Input_Array: kotlin.Array<GenericArrayType>
+
+
+        Input_Array = arrayOf(Value_of_Type)
+
+
+        return Input_Array
     }
 }
